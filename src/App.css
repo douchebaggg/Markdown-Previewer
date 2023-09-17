@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #292929;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.editor-container {
+  max-width: 600px;
+  margin: 1.125rem auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.editor-container .toolbar {
+  width: 99%;
+}
+.toolbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #4aa3a3;
+  padding: 0.3rem;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px #3a6363;
+  font-size: 1.125rem;
+  color: black;
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+#editor{
+  min-height: 200px;
+  padding: 10px;
+  width: 99%;
+  margin-bottom: 1.2rem;
+  box-shadow: 1px 1px 10px 2px #585858;
+  resize: none;
+  outline: none;
+  overflow: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.preview-wrapper{
+  max-width: 800px;
+  margin: 1.125rem auto;
+  min-height: 200px;
+  border: solid 1px black !important;
+  background-color: whitesmoke;
+  overflow-wrap: break-word;
+  box-shadow: 1px 1px 10px 2px #585858;
+  
+  
+}
+
+#preview{
+  margin: 1.25rem;
+  font-size: 1rem;
+ 
+  
+}
+#preview img{
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+  
+}
+#preview h1{
+  border-bottom: solid 2px rgb(0, 44, 34) !important;
+}
+#preview h2{
+  border-bottom: solid 1px rgb(0, 44, 34);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+#preview h3{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.icon{
+  color: #161616;
+  font-size: 1.25rem; 
+  margin-left: auto;
+  width: 25px;
+  cursor:"pointer";
+  border: none;
+  background-color: #4aa3a3;
+}
+.icon:hover{
+  color: aliceblue;
+  cursor: pointer !important;
+  opacity: 90%;
+}
+
+.textarea-full-height{
+  height: 94vh;
+  margin: auto;
+}
+.hide{
+  display: none;
+}
+.maximum{
+  min-height: 94vh;
 }
